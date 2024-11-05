@@ -21,19 +21,6 @@ class SettingsScreen extends StatelessWidget {
     }
   }
 
-  Future<void> _writeSupportEmail() async {
-    final Uri emailLaunchUri = Uri(
-      scheme: 'mailto',
-      path: 'support@yourapp.com',
-      queryParameters: {
-        'subject': 'Flight App Support',
-      },
-    );
-    if (await canLaunchUrl(emailLaunchUri)) {
-      await launchUrl(emailLaunchUri);
-    }
-  }
-
   Widget _buildSettingsTile({
     required IconData icon,
     required String title,
@@ -78,7 +65,7 @@ class SettingsScreen extends StatelessWidget {
             icon: Icons.privacy_tip,
             title: 'Privacy Policy',
             onTap: () => Navigator.pushNamed(context, '/privacy', arguments: {
-              'url': 'https://yourapp.com/privacy',
+              'url': 'https://ringgoal.xyz/aviainformator-policy',
               'title': 'Privacy Policy'
             }),
           ),
@@ -86,7 +73,7 @@ class SettingsScreen extends StatelessWidget {
             icon: Icons.description,
             title: 'Terms & Conditions',
             onTap: () => Navigator.pushNamed(context, '/privacy', arguments: {
-              'url': 'https://yourapp.com/terms',
+              'url': 'https://ringgoal.xyz/aviainformator-terms',
               'title': 'Terms & Conditions'
             }),
           ),
@@ -99,11 +86,6 @@ class SettingsScreen extends StatelessWidget {
             icon: Icons.star,
             title: 'Rate App',
             onTap: _rateApp,
-          ),
-          _buildSettingsTile(
-            icon: Icons.support_agent,
-            title: 'Write Support',
-            onTap: _writeSupportEmail,
           ),
           _buildSettingsTile(
             icon: Icons.info,
