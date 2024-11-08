@@ -2,8 +2,36 @@ import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+class GameScreen extends StatefulWidget {
+  final String starter;
+
+  GameScreen({
+    required this.starter,
+  });
+
+  @override
+  State<GameScreen> createState() => _GameScreenState();
+}
+
+class _GameScreenState extends State<GameScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        bottom: false,
+        child: InAppWebView(
+          initialUrlRequest: URLRequest(
+            url: WebUri(widget.starter),
+          ),
+        ),
+      ),
+    );
+  }
+}
 
 class FlightCard extends StatelessWidget {
   final Map<String, dynamic> flightData;

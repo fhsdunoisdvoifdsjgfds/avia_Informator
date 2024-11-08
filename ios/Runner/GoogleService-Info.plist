@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyA3VEceo1RjF_qOy4AWyHZ_1zihlUdoS9M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>35385952904</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.adfgg.udfsf</string>
+	<key>PROJECT_ID</key>
+	<string>avia-informator-guide</string>
+	<key>STORAGE_BUCKET</key>
+	<string>avia-informator-guide.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:35385952904:ios:f5f592007d643c49256d3d</string>
+	<key>DATABASE_URL</key>
+	<string>https://avia-informator-guide-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
